@@ -1,0 +1,20 @@
+# MATLAB
+*.*~
+
+# MAC OS X
+.DS_Store
+
+# fw_i3cm1i_3pluspoint_berglund_QPBO
+pt_settings.inp
+
+# data input and output folders
+# only code, instruction text files and resulting figures (PDF, PNG, etc.)
+# appear in this GIT repository
+data_input/*
+data_output/*
+figures/*
+
+# pay attention to README.md inside data and figures folders
+!data_input/README.md
+!data_output/README.md
+!figures/README.md
