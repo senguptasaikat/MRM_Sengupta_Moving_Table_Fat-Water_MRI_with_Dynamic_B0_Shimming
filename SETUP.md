@@ -5,7 +5,7 @@ Requirements:
 -------------
 * Python - for image reconstruction
 * Julia - for image reconstruction
-* MATLAB - for fat/water separation (3-point, QPBO), dynamic shiimming and figure creation
+* MATLAB - for fat/water separation (3-point, QPBO), dynamic shimming and figure creation
 * fw_i3cm0i_3point_berglund.m and associated files from ISMRM Fat Water Toolbox available at [http://ismrm.org/workshops/FatWater12/data.htm](http://ismrm.org/workshops/FatWater12/data.htm) fw_i3cm0i_3point_berglund.m is also available as FattyRiot_fw_i3cm0i_3point_berglund.m within [https://github.com/welcheb/FattyRiot](https://github.com/welcheb/FattyRiot)
 * fw_i3cm1i_3pluspoint_berglund_QPBO.m and assocaited files available from [https://github.com/welcheb/fw_i3cm1i_3pluspoint_berglund_QPBO](https://github.com/welcheb/fw_i3cm1i_3pluspoint_berglund_QPBO)
 
@@ -26,7 +26,7 @@ Installation Options:
 Usage Steps:
 ------------
 * #### Data download
-	- Run `./code/download_data_all.m` or `./code/download_data_all.py` to download the raw CMT *k*-space data files in MATLAB .mat V5 format to the `../data_input/` folder.
+	- Run `./code/download_data_all.py` to download the raw CMT *k*-space data files in MATLAB .mat V5 format to the `../data_input/` folder.
 
 * #### Reconstruction, fat/water separation and dynamic shimming performed at the MRI scanner
  	- Edit variable `fileno` varibale in MATLAB m-file `./code/JULIAImageRecon_FWSeparation_DynamicShimming.m`, e.g. for subject 2 non-shimmed `fileno = 'Sub2_NS';`
@@ -40,8 +40,6 @@ Usage Steps:
 * #### Figure creation
 	- Once results are available in `./data_output/`, figures appearing in the published paper can be recreated using any one of the scripts found in `./code` with the prefix `CMT_FWMRI_DYNSHIM_Figure`, e.g. `./code/CMT_FWMRI_DYNSHIM_Figure_1.m`
 	 
-
 Notes:
 ------
-* The scripts `./code/download_data_verify_all.py` and `./code/download_data_verify_all.m` verify the MD5 hash values for all `./data_input/` files.
 * Files in `./data_input/`, `./data_output/`, and `./figures/` (other than `README.md`) are ignored when performing `git commit`.
